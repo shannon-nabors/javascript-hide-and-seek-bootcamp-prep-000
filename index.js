@@ -22,7 +22,7 @@ function increaseRankBy(n) {
   let childrenFL = firstList.children;
     for (let i = 0; i < childrenFL.length; i++) {
       let currentRank = (parseInt(childrenFL[i].innerHTML));
-      currentRank = currentRank + n;
+      newRank = currentRank + n;
     }
       
   let childrenSL = secondList.children;
