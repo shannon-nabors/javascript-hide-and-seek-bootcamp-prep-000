@@ -26,10 +26,11 @@ function increaseRankBy(n) {
       firstList.children[i] = newRank;
     }
       
-  let childrenSL = secondList.children;
-    for (let i = 0; i < childrenSL.length; i++) {
-      let currentRank = (parseInt(childrenSL[i].innerHTML));
-      currentRank = currentRank + n;
+  //let childrenSL = secondList.children;
+    for (let i = 0; i < secondList.children.length; i++) {
+      var cRank = (parseInt(secondList.children[i].innerHTML));
+      var nRank = cRank + n;
+      secondList.children[i] = nRank;
     }
 }
 
