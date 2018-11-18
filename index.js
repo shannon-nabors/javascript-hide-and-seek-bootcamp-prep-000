@@ -10,7 +10,7 @@ function getFirstSelector(selector) {
 
 function nestedTarget() {
   var nested = (document.getElementById('nested'));
-  var target = (document.querySelector(nested.target));
+  var target = (document.querySelector('#nested .target'));
   return target;
 }
 
