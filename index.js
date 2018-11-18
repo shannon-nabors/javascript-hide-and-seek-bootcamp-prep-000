@@ -34,9 +34,6 @@ function increaseRankBy(n) {
     }
 }
 
-const rankedLists = document.querySelectorAll('.ranked-list');
-console.log(rankedLists);
-
 function deepestChild() {
   var deepChild = (document.querySelector('#grand-node div div div div'));
   return deepChild;
