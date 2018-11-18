@@ -23,14 +23,14 @@ function increaseRankBy(n) {
     for (let i = 0; i < firstList.children.length; i++) {
       var currentRank = (parseInt(firstList.children[i].innerHTML));
       var newRank = currentRank + n;
-      firstList.children[i] = newRank;
+      firstList.children[i] = parseInt(newRank);
     }
       
   //let childrenSL = secondList.children;
     for (let i = 0; i < secondList.children.length; i++) {
       var cRank = (parseInt(secondList.children[i].innerHTML));
       var nRank = cRank + n;
-      secondList.children[i] = nRank;
+      secondList.children[i] = parseInt(nRank);
     }
 }
 
