@@ -20,10 +20,16 @@ function increaseRankBy(n) {
   const secondList = rankedLists[1];
   
   let children = firstList.children;
-      for (let i = 0; i < children.length; i++) {
-        let currentRank = (parseInt(children[i].innerHTML));
-        currentRank = currentRank + n;
-      }
+    for (let i = 0; i < children.length; i++) {
+      let currentRank = (parseInt(children[i].innerHTML));
+      currentRank = currentRank + n;
+    }
+      
+  let children = secondList.children;
+    for (let i = 0; i < children.length; i++) {
+      let currentRank = (parseInt(children[i].innerHTML));
+      currentRank = currentRank + n;
+    }
 }
 
 function deepestChild() {
